@@ -55,11 +55,23 @@
           <ul id="menu">
             <li onclick="Move($('#home'))"><a href="#home" class="scroll_move">Home</a></li>
             <li onclick="Move($('#about'))"><a href="#about" class="scroll_move">About</a></li>
+            <li onclick="Move($('#skill'))"><a href="#skill" class="scroll_move">Skill</a></li>
             <li onclick="Move($('#portfolio'))"><a href="#portfolio" class="scroll_move">Portfolio</a></li>
             <li onclick="Move($('#contact'))"><a href="#contact" class="scroll_move">Contact</a></li>
           </ul>
-
         </nav>
+
+        <!-- <nav class="gnb_nav">
+          <ul id="menu">
+            <li onclick="Move($('#home'))"><a href="#home" class="scroll_move">Home</a></li>
+            <li onclick="Move($('#about'))"><a href="#about" class="scroll_move">About</a></li>
+            <li onclick="Move($('#skill'))"><a href="#skill" class="scroll_move">Skill</a></li>
+            <li onclick="Move($('#portfolio'))"><a href="#portfolio" class="scroll_move">Portfolio</a></li>
+            <li onclick="Move($('#contact'))"><a href="#contact" class="scroll_move">Contact</a></li>
+          </ul>
+        </nav> -->
+
+
       </div>
     </header>
 
@@ -86,7 +98,7 @@
             </div>
           </div>
 
-          <script>
+          <!-- <script>
             let didScroll = false;
             let paralaxTitles = document.querySelectorAll('.paralax_title');
 
@@ -106,7 +118,7 @@
 
             requestAnimationFrame(raf);
             window.addEventListener('scroll', scrollInProgress)
-          </script>
+          </script> -->
 
 
       </section>
@@ -235,13 +247,6 @@
                 <li><img src="images/indesign.svg" alt="indesign"></li>
               </ul>
             </li>
-
-
-
-
-
-
-
           </ul>
         </div>
       </section>
@@ -322,7 +327,7 @@
 
             <!-- <div class="view_img">메인화면 이미지 미리보기</div> -->
             <div class="pf_btns">
-              <a href="images/applegym기획안.png" class="viewOpen pf_btn">작업과정</a>
+              <a href="images/applegympdf.png" class="viewOpen pf_btn">작업과정</a>
               <a href="rwd/index.php" target="blank" class="pf_btn">사이트 바로가기</a>
             </div>
 
@@ -377,32 +382,7 @@
     //   });
     // });
 
-
-
-
-    // header scroll down
-    $(window).scroll(function () {
-      if ($(window).scrollTop() > 70) {
-        $('.header').addClass('down');
-      } else {
-        $('.header').removeClass('down');
-      }
-    });
-
-
-
-
-    // scroll gnb
-
-    function Move(obj) {
-      $('html, body').animate({
-        scrollTop: $(obj).offset().top - 40
-      }, 500);
-    };
-
-
     // swiper
-
     var swiper = new Swiper(".mySwiper", {
       effect: "coverflow",
       loop: true,

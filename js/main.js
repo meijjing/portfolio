@@ -20,7 +20,36 @@ function closeNav() {
   $('nav').removeClass('show_on_mobile');
 };
 
+// scroll gnb
+function Move(obj) {
 
+
+  if ($(window).width() >= 768) {
+    $('html, body').animate({
+      scrollTop: $(obj).offset().top - 20
+    }, 500);
+  }
+
+  if ($(window).width() < 768) {
+    $('html, body').animate({
+      scrollTop: $(obj).offset().top - 40
+    }, 500);
+    $('nav').removeClass('show_on_mobile');
+  }
+};
+
+
+// header scroll down
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 70) {
+    $('.header').addClass('down');
+  } else {
+    $('.header').removeClass('down');
+  }
+});
+
+
+//portfolio
 $(function () {
 
   //var
@@ -32,8 +61,6 @@ $(function () {
   var $viewImg = $('#portfolio .portfolio_bg .portfolio_img');
   var $view = $('#portfolio .portfolio_bg');
 
-  // 포폴 기획안
-  //portfolio
   // $list.on('click', function (event) {
   //   event.preventDefault();
   //   nowIdx = $list.index(this);
@@ -43,8 +70,6 @@ $(function () {
   //   $listImg.fadeOut();
   //   $listImg.eq(nowIdx).fadeIn();
   // });
-
-
   $viewOpen.on('click', function (event) {
 
     event.preventDefault();
