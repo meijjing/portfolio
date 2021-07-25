@@ -33,114 +33,6 @@ body {
 }
 
 
-/* header */
-header {
-  width: 100%;
-}
-
-.header {
-  position: fixed;
-  top: 0px;
-  padding: 0 2%;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  height: 50px;
-  line-height: 50px;
-  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .2);
-  background: #fff;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: 5;
-  vertical-align: middle;
-}
-
-.down {
-  background: rgba(255, 255, 255, 0.7);
-}
-
-header .h_logo {
-  float: left;
-  width: 200px;
-  overflow: hidden;
-  color: #4419e0;
-  font-size: 2.063rem;
-  font-weight: 800;
-  letter-spacing: -1.5px;
-  font-family: 'Montserrat';
-}
-
-.menu_toggle_btn {
-  float: right;
-  width: 40px;
-  height: 50px;
-  background: url('../images/menu_toggle.png') no-repeat center;
-  background-size: 34px;
-}
-
-
-nav {
-  width: 250px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: -260px;
-  padding: 100px 15px 0 0;
-  box-sizing: border-box;
-
-  font-size: 1.5rem;
-  font-weight: 800;
-  font-family: 'Montserrat';
-  text-transform: capitalize;
-  text-align: right;
-
-  z-index: 9999px;
-  background: #4419e0;
-  color: #fff;
-
-  transition: .3s ease-in-out;
-}
-
-.show_on_mobile {
-  right: 0;
-}
-
-nav ul li {
-  width: 100%;
-  padding: 5px 0;
-}
-
-nav ul li a {
-  height: 100%;
-  display: block;
-  padding: 0;
-}
-
-nav ul li:hover {
-  color: #000;
-}
-
-html[data-current-page-index="0"] .nav {
-  transform: translateY(0);
-}
-
-nav button {
-  width: 50px;
-  height: 50px;
-  border: 0;
-  outline: 0;
-  background: url('../images/cancel.svg') no-repeat center;
-  background-size: 32px;
-  text-indent: -9999px;
-
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
 
 
 /* section */
@@ -329,7 +221,7 @@ nav button {
 #about {
   width: 100%;
   height: auto;
-  background: url('../images/about_bg.jpg') no-repeat center;
+  background: url('../images/about_bg.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -721,8 +613,8 @@ nav button {
 #contact {
   width: 100%;
   height: 95vh;
-  background: url('../images/contact_bg.jpg') center;
-  background-size: cover;
+  background: url('../images/contact_bg.jpg') center center;
+  background-size: auto 100%;
   background-attachment: fixed;
   position: relative;
 }
@@ -917,63 +809,9 @@ footer {
 /* 768 태블릿 CSS */
 @media all and (min-width: 768px) {
 
-  .header {
-    height: 70px;
-    line-height: 70px;
-  }
 
-  .down {
-    height: 50px;
-    line-height: 50px;
-  }
-
-  /* nav */
-  .menu_toggle_btn {
-    display: none;
-  }
-
-  nav button {
-    display: none;
-  }
-
-  nav {
-    width: 520px !important;
-    height: auto;
-    right: 0;
-    padding: 0;
-    position: relative;
-    float: right;
-    text-align: left;
-    background: none;
-    color: #000;
-    font-size: 1.25rem;
-  }
-
-  nav ul li {
-    display: inline-block;
-    width: auto;
-    padding: 0 20px;
-  }
-
-  nav ul li:hover {
-    background: #4419e0;
-    color: #fff;
-  }
-
-  nav a:hover,
-  nav a.active {
-    background: #4419e0;
-    color: #fff;
-  }
-
-  /* section - home */
-  #home .out_con {
-    width: 60%;
-    max-width: 600px;
-  }
 
   #home .img_con {
-    width: 100%;
     height: 350px;
   }
 

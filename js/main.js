@@ -22,8 +22,6 @@ function closeNav() {
 
 // scroll gnb
 function Move(obj) {
-
-
   if ($(window).width() >= 768) {
     $('html, body').animate({
       scrollTop: $(obj).offset().top - 20
