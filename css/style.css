@@ -573,9 +573,9 @@ nav ul li:hover {
   width: 100%;
   max-width: 780px;
   margin: 0 auto;
+  margin-bottom: 30px;
   height: 384.67px;
   position: relative;
-  margin-bottom: 10px;
 }
 
 #portfolio .pf_img .img_d {
@@ -642,6 +642,14 @@ nav ul li:hover {
 
 #portfolio .pf2 .pf_desc .pf_tit h4:before {
   content: "02";
+  font-size: 3rem;
+  color: #4419e0;
+  font-family: 'Montserrat';
+  margin-right: 20px;
+}
+
+#portfolio .pf3 .pf_desc .pf_tit h4:before {
+  content: "03";
   font-size: 3rem;
   color: #4419e0;
   font-family: 'Montserrat';
@@ -731,6 +739,10 @@ nav ul li:hover {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+#portfolio .pf3 .pf_desc .pf_btns {
+  width: 380px;
 }
 
 #portfolio .pf_desc .pf_btn {
@@ -1133,6 +1145,10 @@ footer {
     width: 460px;
   }
 
+  #portfolio .pf3 .pf_desc .pf_btns {
+    width: 300px;
+  }
+
   #portfolio .pf_desc .pf_btn {
     width: 140px;
   }
@@ -1246,7 +1262,10 @@ footer {
 
   #portfolio .pf_desc .pf_btns {
     width: 360px;
+  }
 
+  #portfolio .pf3 .pf_desc .pf_btns {
+    width: 240px;
   }
 
   #portfolio .pf_desc .pf_btn {
@@ -1298,7 +1317,6 @@ footer {
 @media all and (max-width: 413px) {
   #portfolio .pf_desc .pf_btns {
     width: 345px;
-
   }
 
   #portfolio .pf_desc .pf_btn {
