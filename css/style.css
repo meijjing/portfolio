@@ -1154,7 +1154,8 @@ footer {
     width: 460px;
   }
 
-  #portfolio .pf3 .pf_desc .pf_btns {
+  #portfolio .pf3 .pf_desc .pf_btns,
+  #portfolio .pf4 .pf_desc .pf_btns {
     width: 300px;
   }
 
@@ -1273,7 +1274,8 @@ footer {
     width: 360px;
   }
 
-  #portfolio .pf3 .pf_desc .pf_btns {
+  #portfolio .pf3 .pf_desc .pf_btns,
+  #portfolio .pf4 .pf_desc .pf_btns {
     width: 240px;
   }
 
