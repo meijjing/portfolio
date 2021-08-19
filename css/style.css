@@ -656,6 +656,14 @@ nav ul li:hover {
   margin-right: 20px;
 }
 
+#portfolio .pf4 .pf_desc .pf_tit h4:before {
+  content: "04";
+  font-size: 3rem;
+  color: #4419e0;
+  font-family: 'Montserrat';
+  margin-right: 20px;
+}
+
 #portfolio .portfolio .pf_desc .pf_tit span {
   margin-right: 5px;
   width: 75px;
@@ -741,7 +749,8 @@ nav ul li:hover {
   justify-content: space-between;
 }
 
-#portfolio .pf3 .pf_desc .pf_btns {
+#portfolio .pf3 .pf_desc .pf_btns,
+#portfolio .pf4 .pf_desc .pf_btns {
   width: 380px;
 }
 
