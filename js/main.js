@@ -14,11 +14,11 @@ jQuery(document).ready(function () {
 // 모바일 네비
 function openNav() {
   $('nav').toggleClass('show_on_mobile');
-};
+}
 
 function closeNav() {
   $('nav').removeClass('show_on_mobile');
-};
+}
 
 // scroll gnb
 function Move(obj) {
@@ -34,7 +34,7 @@ function Move(obj) {
     }, 500);
     $('nav').removeClass('show_on_mobile');
   }
-};
+}
 
 
 // header scroll down
