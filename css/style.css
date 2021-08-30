@@ -748,6 +748,43 @@ nav ul li:hover {
   right: 0;
 }
 
+#portfolio .pf_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#portfolio .pf_video img {
+  display: block;
+  width: 600px;
+}
+
+#portfolio .pf_video .ipad {
+  display: none;
+}
+
+#portfolio .pf_video .game_video {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 550px;
+  height: 302px;
+  background: #fff;
+  overflow: hidden;
+}
+
+#portfolio .pf_video .game_video video {
+  height: 302px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 #portfolio .portfolio .pf_desc {
   width: 100%;
   background: #fff;
@@ -807,6 +844,14 @@ nav ul li:hover {
 
 #portfolio .pf4 .pf_desc .pf_tit h4:before {
   content: "04";
+  font-size: 3rem;
+  color: #4419e0;
+  font-family: 'Montserrat';
+  margin-right: 20px;
+}
+
+#portfolio .pf5 .pf_desc .pf_tit h4:before {
+  content: "05";
   font-size: 3rem;
   color: #4419e0;
   font-family: 'Montserrat';
@@ -899,7 +944,8 @@ nav ul li:hover {
 }
 
 #portfolio .pf3 .pf_desc .pf_btns,
-#portfolio .pf4 .pf_desc .pf_btns {
+#portfolio .pf4 .pf_desc .pf_btns,
+#portfolio .pf5 .pf_desc .pf_btns {
   width: 380px;
 }
 
@@ -1202,6 +1248,32 @@ footer {
     width: 96px;
   }
 
+  #portfolio .pf_video .imac {
+    display: none;
+  }
+
+  #portfolio .pf_video .ipad {
+    display: initial;
+    width: 370px;
+  }
+
+  #portfolio .pf_video .game_video {
+    width: 328px;
+    height: 430px;
+    top: 45px;
+  }
+
+  #portfolio .pf_video .game_video video {
+    width: 328px;
+    height: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+
   #portfolio .portfolio .pf_desc .inner {
     padding: 0 15px;
     box-sizing: border-box;
@@ -1279,7 +1351,8 @@ footer {
   }
 
   #portfolio .pf3 .pf_desc .pf_btns,
-  #portfolio .pf4 .pf_desc .pf_btns {
+  #portfolio .pf4 .pf_desc .pf_btns,
+  #portfolio .pf5 .pf_desc .pf_btns {
     width: 300px;
   }
 
@@ -1402,7 +1475,8 @@ footer {
   }
 
   #portfolio .pf3 .pf_desc .pf_btns,
-  #portfolio .pf4 .pf_desc .pf_btns {
+  #portfolio .pf4 .pf_desc .pf_btns,
+  #portfolio .pf5 .pf_desc .pf_btns {
     width: 240px;
   }
 
